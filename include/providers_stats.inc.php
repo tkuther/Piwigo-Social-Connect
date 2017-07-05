@@ -68,4 +68,10 @@ return array(
     'new_app_link'      => null,
     'about_link'        => 'http://openid.net/get-an-openid/what-is-openid/',
   ),
+  'Keycloak' => array(
+    'name'              => 'Keycloak',
+    'require_client_id' => true,
+    'new_app_link'      => null,
+    'about_link'        => 'http://openid.net/get-an-openid/what-is-openid/',
+  ),
 );

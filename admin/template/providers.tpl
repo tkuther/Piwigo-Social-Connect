@@ -80,6 +80,12 @@ jQuery(".open-help").click(function() {
           <label for="Google_hd">Domain name (optional)</label>
           <input type="text" id="Google_hd" name="providers[Google][hd]" value="{$CONFIG.Google.hd}">
         {/if}
+        {if $p=='Keycloak'}
+          <label for="Keycloak_realm">Keycloak realm</label>
+          <input type="text" id="Keycloak_realm" name="providers[[keys][realm]" value="{$CONFIG[$p].keys.realm}">
+          <label for="Keycloak_url">Keycloak base URL (e.g. https://keycloak.example.com)</label>
+          <input type="text" id="Keycloak_url" name="providers[{$p}][keys][url]" value="{$CONFIG[$p].keys.url}">
+        {/if}
       </td>
       {/if}
     </tr></table>
